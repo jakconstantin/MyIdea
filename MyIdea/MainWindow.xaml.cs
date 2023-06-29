@@ -27,7 +27,7 @@ namespace MyIdea
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("One branch test my new");
+            MessageBox.Show("New text");
         }
     }
 }
