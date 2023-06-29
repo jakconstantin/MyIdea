@@ -27,7 +27,7 @@ namespace MyIdea
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("one step");
+            MessageBox.Show("One Step");
         }
     }
 }
