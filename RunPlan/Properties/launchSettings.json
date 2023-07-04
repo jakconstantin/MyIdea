@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "RunPlan": {
+      "commandName": "Project",
+      "commandLineArgs": "\"{\\\"Id\\\":\\\"1c4e93b9-52e6-4385-a22f-e5cae5b47f07\\\",\\\"Name\\\":\\\"Test\\\",\\\"SearchText\\\":\\\"Коляска\\\",\\\"StoreType\\\":0}\""
+    }
+  }
+}
