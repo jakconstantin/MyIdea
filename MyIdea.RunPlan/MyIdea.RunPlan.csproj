@@ -8,9 +8,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Engine\MyIdea.Engine.csproj" />
-    <ProjectReference Include="..\Idea.Youla\MyIdea.Youla.csproj" />
     <ProjectReference Include="..\MyIdea.Email\MyIdea.Email.csproj" />
+    <ProjectReference Include="..\MyIdea.Engine\MyIdea.Engine.csproj" />
+    <ProjectReference Include="..\MyIdea.Youla\MyIdea.Youla.csproj" />
   </ItemGroup>
 
 </Project>
