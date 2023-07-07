@@ -44,13 +44,10 @@ namespace Idea.Youla
 
             var q = from item in youlaResponse.Data.Feed.Items
                     where item.Product != null
-                    select new YoulaResult() { Id = item.Product!.Id, Url = item.Product.Url };
+                    select new YoulaResult() { Id = item.Product!.Id, Url = _options.SiteUrl + item.Product.Url };
 
             
-            return q.ToList<IResult>();
-            //Thread.Sleep(3000);
-            //return new YoulaResult();
-            //throw new NotImplementedException();
+            return q.ToList<IResult>();           
         }
 
         private YoulaRequest GetRequestBody()

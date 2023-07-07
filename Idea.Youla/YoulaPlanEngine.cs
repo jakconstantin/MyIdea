@@ -24,7 +24,7 @@ namespace Idea.Youla
                 GetAutoByFilterQuery = "/federation/graphql" 
             };
             DefaultFilterOptions defaultFilterOptions = new DefaultFilterOptions();
-            defaultFilterOptions.PriceMin = plan.PriceMin;
+            defaultFilterOptions.PriceMin = plan.PriceMin*100;
             defaultFilterOptions.PriceMax = plan.PriceMax*100;
             defaultFilterOptions.SearchText = plan.SearchText;
 

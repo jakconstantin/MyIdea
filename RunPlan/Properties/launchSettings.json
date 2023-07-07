@@ -2,7 +2,7 @@
   "profiles": {
     "RunPlan": {
       "commandName": "Project",
-      "commandLineArgs": "\"{\\\"Id\\\":\\\"1c4e93b9-52e6-4385-a22f-e5cae5b47f07\\\",\\\"Name\\\":\\\"Test\\\",\\\"SearchText\\\":\\\"Коляска\\\",\\\"StoreType\\\":0}\""
+      "commandLineArgs": "\"{\\\"Id\\\":\\\"c99caf09-7cab-4cf3-ae72-8b0a10ad145d\\\",\\\"Name\\\":\\\"Test\\\",\\\"SearchText\\\":\\\"Детская коляска\\\",\\\"StoreType\\\":0,\\\"PriceMax\\\":10000,\\\"PriceMin\\\":1000}\""
     }
   }
 }
