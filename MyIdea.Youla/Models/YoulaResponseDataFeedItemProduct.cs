@@ -1,7 +1,7 @@
 ﻿//using AutoFindBot.Models.ConfigurationOptions;
 using Newtonsoft.Json;
 
-namespace Idea.Youla.Models;
+namespace MyIdea.Youla.Models;
 
 public class YoulaResponseDataFeedItemProduct
 {

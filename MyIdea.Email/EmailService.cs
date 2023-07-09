@@ -17,7 +17,7 @@ namespace MyIdea.Email
                 emailMessage.From.Add(new MailboxAddress("Парсер сайта", GetText("bTBiaWxlcGV5bWVudGluZm9AeWFuZGV4LnJ1")));
                 emailMessage.To.Add(new MailboxAddress("", email));
                 emailMessage.Subject = subject;
-                emailMessage.Body = new TextPart(MimeKit.Text.TextFormat.Plain)
+                emailMessage.Body = new TextPart(MimeKit.Text.TextFormat.Html)
                 {
                     Text = message
                 };

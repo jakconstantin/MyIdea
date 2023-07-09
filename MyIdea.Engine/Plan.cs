@@ -20,5 +20,7 @@ namespace Engine
 
         public int PriceMin { get; set; }
 
+        public string Enail { get; set; }
+
     }
 }

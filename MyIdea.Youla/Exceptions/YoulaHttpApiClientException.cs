@@ -1,4 +1,4 @@
-﻿namespace Idea.Youla.Exceptions;
+﻿namespace MyIdea.Youla.Exceptions;
 
 public class YoulaHttpApiClientException : Exception
 {

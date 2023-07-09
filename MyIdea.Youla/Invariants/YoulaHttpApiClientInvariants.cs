@@ -1,4 +1,4 @@
-﻿namespace Idea.Youla.Invariants;
+﻿namespace MyIdea.Youla.Invariants;
 
 public class YoulaHttpApiClientInvariants
 {

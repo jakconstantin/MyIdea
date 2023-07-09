@@ -1,9 +1,9 @@
 ﻿//using System.Net;
 //using Ardalis.GuardClauses;
 //using AutoFindBot.Abstractions.HttpClients;
-//using Idea.Youla.HttpMessageHandlers;
-//using Idea.Youla.Invariants;
-//using Idea.Youla.Options;
+//using MyIdea.Youla.HttpMessageHandlers;
+//using MyIdea.Youla.Invariants;
+//using MyIdea.Youla.Options;
 //using Microsoft.Extensions.Configuration;
 //using Microsoft.Extensions.DependencyInjection;
 //using Microsoft.Extensions.Logging;
@@ -11,7 +11,7 @@
 //using Polly.Extensions.Http;
 //using Polly.Retry;
 
-namespace Idea.Youla.Extensions;
+namespace MyIdea.Youla.Extensions;
 
 public static class YoulaHttpApiClientOptionsExtensions
 {

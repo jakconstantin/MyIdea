@@ -2,14 +2,14 @@
 using Engine.Interfaces;
 using Engine.Models.ConfigurationOptions;
 using Engine.PlanEngine;
-using Idea.Youla.Options;
+using MyIdea.Youla.Options;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Idea.Youla
+namespace MyIdea.Youla
 {
     public class YoulaPlanEngine: PlanEngineBase
     {

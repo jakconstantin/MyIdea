@@ -1,9 +1,9 @@
 ﻿using Engine.Client;
 using Engine.Interfaces;
 using Engine.Models.ConfigurationOptions;
-using Idea.Youla.Invariants;
-using Idea.Youla.Models;
-using Idea.Youla.Options;
+using MyIdea.Youla.Invariants;
+using MyIdea.Youla.Models;
+using MyIdea.Youla.Options;
 using Microsoft.Extensions.Options;
 using Newtonsoft.Json;
 using System;
@@ -14,7 +14,7 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Idea.Youla
+namespace MyIdea.Youla
 {
     public class YoulaHttpClient : LightWebClient, IRunParse
 
@@ -44,7 +44,9 @@ namespace Idea.Youla
 
             var q = from item in youlaResponse.Data.Feed.Items
                     where item.Product != null
-                    select new YoulaResult() { Id = item.Product!.Id, Url = _options.SiteUrl + item.Product.Url };
+                    select new YoulaResult() { Id = item.Product!.Id, 
+                                               Url = _options.SiteUrl + item.Product.Url,
+                                               Img = item.Product.Images.Count>0? item.Product.Images[0].Url :""};
 
             
             return q.ToList<IResult>();           

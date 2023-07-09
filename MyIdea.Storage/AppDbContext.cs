@@ -1,13 +1,14 @@
-﻿using Engine.Interfaces;
+﻿using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MyIdea.Youla.Models
+namespace MyIdea.Storage
 {
-    public class YoulaResult: IResult
+    public class AppDbContext : DbContext
     {
     }
+    
 }

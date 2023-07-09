@@ -2,7 +2,7 @@
   "profiles": {
     "RunPlan": {
       "commandName": "Project",
-      "commandLineArgs": "\"{\\\"Id\\\":\\\"c99caf09-7cab-4cf3-ae72-8b0a10ad145d\\\",\\\"Name\\\":\\\"Test\\\",\\\"SearchText\\\":\\\"Детская коляска\\\",\\\"StoreType\\\":0,\\\"PriceMax\\\":10000,\\\"PriceMin\\\":1000}\""
+      "commandLineArgs": "\"{\\\"Id\\\":\\\"c99caf09-7cab-4cf3-ae72-8b0a10ad145d\\\",\\\"Name\\\":\\\"Test\\\",\\\"SearchText\\\":\\\"Детская коляска\\\",\\\"StoreType\\\":0,\\\"PriceMax\\\":10000,\\\"PriceMin\\\":1000,\\\"Enail\\\":\\\"jakconstantin@gmail.com\\\"}\""
     }
   }
 }

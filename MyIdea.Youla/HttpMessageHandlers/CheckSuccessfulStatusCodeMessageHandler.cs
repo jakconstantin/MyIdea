@@ -1,7 +1,7 @@
-﻿using Idea.Youla.Exceptions;
-using Idea.Youla.Invariants;
+﻿using MyIdea.Youla.Exceptions;
+using MyIdea.Youla.Invariants;
 
-namespace Idea.Youla.HttpMessageHandlers;
+namespace MyIdea.Youla.HttpMessageHandlers;
 
 public class CheckSuccessfulStatusCodeMessageHandler : DelegatingHandler
 {

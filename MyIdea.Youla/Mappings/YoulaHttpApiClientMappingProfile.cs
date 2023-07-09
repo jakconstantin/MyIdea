@@ -1,9 +1,9 @@
-﻿using Idea.Youla.Models;
+﻿using MyIdea.Youla.Models;
 //using AutoFindBot.Lookups;
 //using AutoFindBot.Models.Youla;
 //using AutoMapper;
 
-namespace Idea.Youla.Mappings;
+namespace MyIdea.Youla.Mappings;
 
 //public class YoulaHttpApiClientMappingProfile : Profile
 //{

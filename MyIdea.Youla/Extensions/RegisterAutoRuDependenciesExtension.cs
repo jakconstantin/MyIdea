@@ -1,8 +1,8 @@
-﻿using Idea.Youla.Invariants;
-using Idea.Youla.Options;
+﻿using MyIdea.Youla.Invariants;
+using MyIdea.Youla.Options;
 //using Microsoft.Extensions.Options;
 
-namespace Idea.Youla.Extensions;
+namespace MyIdea.Youla.Extensions;
 
 //public static class RegisterRuCaptchaDependenciesExtension
 //{

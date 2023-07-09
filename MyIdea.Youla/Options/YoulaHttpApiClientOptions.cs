@@ -1,6 +1,6 @@
 ﻿using Engine.Client;
 
-namespace Idea.Youla.Options;
+namespace MyIdea.Youla.Options;
 
 public class YoulaHttpApiClientOptions : HttpApiClientOptions
 {

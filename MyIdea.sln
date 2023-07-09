@@ -13,7 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyIdea.Youla", "MyIdea.Youl
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyIdea.RunPlan", "MyIdea.RunPlan\MyIdea.RunPlan.csproj", "{8B7656DA-C87B-476E-9BF5-0F159837CEC6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyIdea.Email", "MyIdea.Email\MyIdea.Email.csproj", "{DB4377CE-E699-4CB7-BDBD-854B5E094EC1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyIdea.Email", "MyIdea.Email\MyIdea.Email.csproj", "{DB4377CE-E699-4CB7-BDBD-854B5E094EC1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyIdea.Storage", "MyIdea.Storage\MyIdea.Storage.csproj", "{6FE121AA-8C16-429B-90B3-D17DC5129B20}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{DB4377CE-E699-4CB7-BDBD-854B5E094EC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DB4377CE-E699-4CB7-BDBD-854B5E094EC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DB4377CE-E699-4CB7-BDBD-854B5E094EC1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6FE121AA-8C16-429B-90B3-D17DC5129B20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FE121AA-8C16-429B-90B3-D17DC5129B20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FE121AA-8C16-429B-90B3-D17DC5129B20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FE121AA-8C16-429B-90B3-D17DC5129B20}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
