@@ -15,5 +15,10 @@ namespace Engine.Models.ConfigurationOptions
         public int PriceMax { get; set; }
 
         public string SearchText { get; set; } = "";
+
+        public int? DistanceMax { get; set; } = null;
+        public double?  Latitude { get; set; } = null;
+        public double? Longitude { get; set;} = null;
+        
     }
 }

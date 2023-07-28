@@ -16,7 +16,7 @@ namespace MyIdea.Youla
         private Plan _plan;
         YoulaHttpClient _httpClient;
         public YoulaPlanEngine(Plan plan)
-        {
+        {            
             YoulaHttpApiClientOptions options = new YoulaHttpApiClientOptions() 
             { 
                 BaseUrl = "https://api-gw.youla.io", 
@@ -27,10 +27,10 @@ namespace MyIdea.Youla
             defaultFilterOptions.PriceMin = plan.PriceMin*100;
             defaultFilterOptions.PriceMax = plan.PriceMax*100;
             defaultFilterOptions.SearchText = plan.SearchText;
+            defaultFilterOptions.DistanceMax = plan.DistanceMax!=null? plan.DistanceMax*1000:null;
+            defaultFilterOptions.Latitude = plan.Latitude;
+            defaultFilterOptions.Longitude = plan.Longitude;
 
-            //"BaseUrl": "https://api-gw.youla.io",
-            //"SiteUrl": "https://youla.ru",
-            //"GetAutoByFilterQuery": "/federation/graphql"
             _plan = plan;
             _httpClient = new YoulaHttpClient(options, defaultFilterOptions);
         }

@@ -30,6 +30,7 @@ namespace MyIdea.Youla
 
         public async Task<List<IResult>> RunParse(CancellationToken stoppingToken = default)
         {
+            Logger.Info("Start parser");
             var path = _options.BaseUrl + _options.GetAutoByFilterQuery;
             var body = GetRequestBody();
             string jsonBody = JsonConvert.SerializeObject(body);
@@ -68,15 +69,22 @@ namespace MyIdea.Youla
                         From = _defaultFilterOptions.PriceMin,
                         To = _defaultFilterOptions.PriceMax
                     },
-                    //new()
-                    //{
-                    //    Slug = RequestInvariants.SlugCategories,
-                    //    Value = new List<string> { RequestInvariants.SProbegom }
-                    //}
+                    new()
+                    {
+                        Slug = RequestInvariants.SlugCategories,
+                        Value = new List<string>()
+                        //Value = new List<string> { RequestInvariants.SProbegom }
+                    }
                     },
                     Location = new YoulaRequestVariablesLocation()
-                    {
-                        City = RequestInvariants.CityMurino
+                    {                       
+                        DistanceMax = _defaultFilterOptions.DistanceMax,
+                        Latitude = _defaultFilterOptions.Latitude,
+                        Longitude = _defaultFilterOptions.Longitude,
+                        //DistanceMax =25000,
+                        //Latitude = 60.046193,
+                        //Longitude = 30.44589
+                        //City = RequestInvariants.CityMurino
                     },
                     Search =_defaultFilterOptions.SearchText
                 },

@@ -22,5 +22,21 @@ namespace Engine
 
         public string Enail { get; set; }
 
+        public int? DistanceMax { get; set; } = null;
+        public double? Latitude { get; set; } = null;
+        public double? Longitude { get; set; } = null;
+
+        public static string GetPlanLogPath(string planID)
+        {
+            //return String.Format("{0}\\{1}.{2}", EngineSettings.Instance.LogFolder, planID,
+            //                                         EngineSettings.LogFileExtension);
+            return String.Format("{0}\\{1}.{2}", Directory.GetCurrentDirectory(), planID, "log");
+        }
+
+        public static string GetPlanLogName(string planID)
+        {                              
+            return String.Format("{0}.{1}", planID, "log");
+        }
+
     }
 }

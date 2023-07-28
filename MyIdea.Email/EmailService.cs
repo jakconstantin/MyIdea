@@ -10,6 +10,7 @@ namespace MyIdea.Email
     {
         public async Task SendEmailAsync(string email, string subject, string message)
         {
+            Logger.Info("Start SendEmail");
             try
             {
                 using var emailMessage = new MimeMessage();
@@ -33,10 +34,9 @@ namespace MyIdea.Email
             }
             catch (Exception ex)
             {
-                if (ex != null)
-                { 
-                }
+                Logger.Error("SendEmail", ex);
             }
+            Logger.Info("Finished SendEmail");
         }
 
 

@@ -10,6 +10,7 @@
   <ItemGroup>
     <ProjectReference Include="..\MyIdea.Email\MyIdea.Email.csproj" />
     <ProjectReference Include="..\MyIdea.Engine\MyIdea.Engine.csproj" />
+    <ProjectReference Include="..\MyIdea.Logger\MyIdea.Logger.csproj" />
     <ProjectReference Include="..\MyIdea.Youla\MyIdea.Youla.csproj" />
   </ItemGroup>
 
