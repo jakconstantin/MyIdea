@@ -49,7 +49,7 @@ namespace MyIdea.Youla
                                                Url = _options.SiteUrl + item.Product.Url,
                                                Img = item.Product.Images.Count>0? item.Product.Images[0].Url :""};
 
-            
+            Logger.Info("Finished parser");
             return q.ToList<IResult>();           
         }
 

@@ -1,8 +1,6 @@
 ﻿using MimeKit;
 using MailKit.Net.Smtp;
-using System.Threading.Tasks;
 using System.Text;
-using static System.Net.Mime.MediaTypeNames;
 
 namespace MyIdea.Email
 {

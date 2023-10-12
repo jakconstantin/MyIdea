@@ -11,19 +11,12 @@ using System.Threading.Tasks;
 
 namespace MyIdea.Logger
 {
-    //public class Logger
-    //{
-    //    //https://habr.com/ru/articles/450728/
-    //    //https://stackoverflow.com/questions/66530857/nlog-in-different-versions-for-multiple-projects
-    //    private static NLog.Logger logger = LogManager.GetLogger("");//LogManager.GetCurrentClassLogger();
-    //    void t()
-    //    {
-    //        //logger.Error()
-    //    }
-    //}
+   
+    //https://habr.com/ru/articles/450728/
+    //https://stackoverflow.com/questions/66530857/nlog-in-different-versions-for-multiple-projects  
     //https://habr.com/ru/articles/498978/
     //https://csharp.hotexamples.com/ru/examples/NLog.Targets/FileTarget/-/php-filetarget-class-examples.html
-    //https://csharp.hotexamples.com/ru/examples/NLog.Targets/FileTarget/-/php-filetarget-class-examples.html
+  
     public class MyIdeaLogger //: NLog.Logger
     {
         ILogger _logger;
