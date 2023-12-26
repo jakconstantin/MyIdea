@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MyIdea.Engine.Collections;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -16,14 +17,22 @@ namespace Engine.Client
         }
 
 
-        protected virtual async Task<HttpResponseMessage> SendAsync(string path, HttpMethod method, HttpContent? content = null)
+        protected virtual async Task<HttpResponseMessage> SendAsync(string path, HttpMethod method, NameValueList header, CancellationToken cancellationToken, HttpContent? content = null )
         {
             var request = new HttpRequestMessage(method, path)
             {
-                Content = content,
+                Content = content,   
             };
 
-            return await _httpClient.SendAsync(request);
+            if (header != null)
+            {
+                foreach (var headerValue in header) 
+                {
+                    request.Headers.Add(headerValue.Key, headerValue.Value);
+                }
+            }            
+
+            return await _httpClient.SendAsync(request, cancellationToken);
         }
 
         protected virtual async Task<HttpResponseMessage> PostAsync(string? requestUri, HttpContent? content, CancellationToken cancellationToken)

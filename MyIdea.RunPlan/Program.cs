@@ -8,6 +8,7 @@ using MyIdea.Logger;
 using System.Diagnostics;
 using System.Reflection;
 using MyIdea.RunPlan;
+using MyIdea.Email.EmailBody;
 
 namespace RunPlan
 {
@@ -52,46 +53,12 @@ namespace RunPlan
 
                 var list = await planEngineBase.RunParse();
 
-                //            < !DOCTYPE html >
-                //< html >
-                //< body >
-
-                //< h2 > HTML Image </ h2 >
-                //< img src = "img_chania.jpg" alt = "Flowers in Chania" width = "460" height = "345" >
-
-                //</ body >
-                //</ html >
-
-                //            <html>
-                // <head>
-                //  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-                //  <title>Ссылка</title>
-                // </head>
-                // <body> 
-                //   <p><a href="sample.html"><img src="images/sample.gif" width="50" 
-                //   height="50" alt="Пример"></a></p>
-                // </body> 
-                //</html>
-
-
-
-
-                StringBuilder sb = new StringBuilder();
-                sb.AppendLine("<!DOCTYPE html>");
-                sb.AppendLine("<html>");
-                sb.AppendLine("<body>");
-                foreach (var item in list)
-                {
-                    string s = string.Format("""<p><a href="{0}"><img src="{1}" width="100" height="100"></a></p>""", item.Url, item.Img);
-                    sb.AppendLine(s);
-                }
-                sb.AppendLine("</body>");
-                sb.AppendLine("</html>");
-
+                EmailBodyHtml emailBodyHtml = new EmailBodyHtml();
+                string emailBody =  emailBodyHtml.GetEmailBody(list);
 
                 EmailService emailService = new EmailService();
 
-                await emailService.SendEmailAsync(plan.Enail, string.Format("""Отчет "{0}" """, plan.SearchText), sb.ToString());
+                await emailService.SendEmailAsync(plan.Enail, string.Format("""Отчет "{0}" """, plan.SearchText), emailBody);
 
                 //Plan plan = new Plan() { Id = Guid.NewGuid(), Name = "Test", SearchText = "Мотоцикл" };
                 //string json = Utils.ToJsonText(plan);

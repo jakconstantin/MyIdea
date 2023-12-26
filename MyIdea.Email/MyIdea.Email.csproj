@@ -11,6 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\MyIdea.Engine\MyIdea.Engine.csproj" />
     <ProjectReference Include="..\MyIdea.Logger\MyIdea.Logger.csproj" />
   </ItemGroup>
 

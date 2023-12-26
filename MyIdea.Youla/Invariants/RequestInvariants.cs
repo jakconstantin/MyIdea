@@ -3,9 +3,9 @@
 public class RequestInvariants
 {
     public const string OperationName = "catalogProductsBoard";
-    
-    public const string Sort = "DATE_PUBLISHED_DESC";
-    
+
+    public const string Sort = "DATE_PUBLISHED_DESC";//"DEFAULT";//
+
     public const string SlugPrice = "price";
     
     public const string SlugCategories = "categories";

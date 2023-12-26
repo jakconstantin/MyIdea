@@ -1,4 +1,5 @@
-﻿using System.Runtime.Serialization.Json;
+﻿using System.Collections;
+using System.Runtime.Serialization.Json;
 using System.Text;
 using System.Text.Json;
 using System.Xml.Serialization;
@@ -37,7 +38,30 @@ namespace Engine
         //    return JsonSerializer.SerializeAsync(obj, cancellationToken);
         //}
 
+        public static string Join<T>(string separator, IEnumerable<T> values)
+        {
+            StringBuilder rt = new StringBuilder();
 
+            int i = 0;
+            foreach (T value in values)
+            {
+                if (i++ > 0)
+                {
+                    rt.Append(separator);
+                }
+                rt.Append(Convert.ToString(value));
+            }
+
+            return rt.ToString();
+        }
+
+        public static IEnumerable<Y> ConvertAll<X, Y>(IEnumerable enumerable, Converter<X, Y> converter)
+        {
+            foreach (X x in enumerable)
+            {
+                yield return converter(x);
+            }
+        }
 
     }
 }
